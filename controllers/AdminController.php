@@ -217,7 +217,7 @@ class AdminController {
         Utils::redirect("admin");
     }
 
-    public function deleteComment() : void
+    public function deleteComments() : void
     {
         $this->checkIfUserIsConnected();
 
