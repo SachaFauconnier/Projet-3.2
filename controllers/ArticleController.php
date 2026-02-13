@@ -33,7 +33,7 @@ class ArticleController
 
         //Incrémenter le compteur de vues
         $articleManager->incrementViews($id);
-
+        
         $commentManager = new CommentManager();
         $comments = $commentManager->getAllCommentsByArticleId($id);
 
