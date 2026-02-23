@@ -110,6 +110,7 @@
      * @param string $format : le format pour la convertion de la date si elle est une string.
      * Par défaut, c'est le format de date mysql qui est utilisé.
      */
+<<<<<<< HEAD
     public function setDateUpdate(string|DateTime|null $dateUpdate, string $format = 'Y-m-d H:i:s') : void
     {
         if ($dateUpdate === null) {
@@ -125,6 +126,16 @@
     }
 
 
+=======
+    public function setDateUpdate(string|DateTime $dateUpdate, string $format = 'Y-m-d H:i:s') : void 
+    {
+        if (is_string($dateUpdate)) {
+            $dateUpdate = DateTime::createFromFormat($format, $dateUpdate);
+        }
+        $this->dateUpdate = $dateUpdate;
+    }
+
+>>>>>>> 725ef501c1374411e0870a4b57a7d448277c441b
     /**
      * Getter pour la date de mise à jour.
      * Grâce au setter, on a la garantie de récupérer un objet DateTime ou null

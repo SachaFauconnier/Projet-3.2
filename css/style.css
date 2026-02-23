@@ -354,6 +354,7 @@ a.info {
     border: 1px solid var(--backgroundColor);
 }
 
+<<<<<<< HEAD
 .articleLine:nth-child(odd) {
   background-color: #99a140; /* vert clair */
 }
@@ -362,6 +363,8 @@ a.info {
   background-color: #255E33; /* vert foncé */
 }
 
+=======
+>>>>>>> 725ef501c1374411e0870a4b57a7d448277c441b
 /** 
  * Footer global de la page.
  */

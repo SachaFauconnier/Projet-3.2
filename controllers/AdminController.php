@@ -34,7 +34,11 @@ class AdminController {
 
         }
           //  On tri les données
+<<<<<<< HEAD
         usort($articles, function($a, $b) use ($sort, $order, $nbComments) {
+=======
+       usort($articles, function($a, $b) use ($sort, $order, $nbComments) {
+>>>>>>> 725ef501c1374411e0870a4b57a7d448277c441b
 
             $result = 0;
 
