@@ -354,6 +354,14 @@ a.info {
     border: 1px solid var(--backgroundColor);
 }
 
+.articleLine:nth-child(odd) {
+  background-color: #99a140; /* vert clair */
+}
+
+.articleLine:nth-child(even) {
+  background-color: #255E33; /* vert foncé */
+}
+
 /** 
  * Footer global de la page.
  */
